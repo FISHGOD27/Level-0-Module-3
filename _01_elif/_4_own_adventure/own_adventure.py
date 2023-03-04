@@ -1,6 +1,23 @@
 from tkinter import simpledialog, messagebox, Tk
 
-# TODO Tell the user a story, but give them options so they can decide the
-#  path of the plot.
-#  Use pop-ups, if statements, and your imagination to make an interesting
-#  story
+def setup():
+    size(500, 500)
+    global x
+    global y
+    x = 250
+    y = 250
+    fill("#0343FC")
+    textSize(10)
+    text("press left to go left, right to go right, down to stop moving", width/2, height/2)
+def draw():
+    background(200, 200, 200)
+    global x
+    global y
+    ellipse(x, y, 50, 50)
+    if keyCode == RIGHT:
+        x+=5
+    elif keyCode == LEFT:
+        x-=5
+
+
+
