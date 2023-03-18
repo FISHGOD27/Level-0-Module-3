@@ -1,13 +1,24 @@
 def setup():
-    # Set the size of your sketch
-    
-    
-    pass
-    
+    size(500,500)
+    global y
+    global x
+    global y2
+    global x2
+    y2=random(50,450)
+    x2=random(50,450)
+    y=250
+    x=250
 def draw():
-    # Starting with the largest ellipse, use a for loop to draw a bullseye with ellipses
-    
-    # Use an if statement and modulo to alternate the color of your rings
-    
-    
-    pass
+    noStroke()
+    global y
+    global x
+    fill("#082AFF")
+    ellipse(x,y,30,30)
+    if keyCode==UP:
+        y-=5
+    if keyCode==DOWN:
+        y+=5
+    if keyCode==RIGHT:
+        x+=5
+    if keyCode==LEFT:
+        x-=5

@@ -8,7 +8,7 @@ if __name__ == '__main__':
     #  A common use for modulo is to test if a number is odd or even.
     #  To do this test, you divide the number by 2.
     #  If the remainder is zero, the number is even, but if the remainder
-    #  is one, the number is odd.
+    #  is anything else, the number is odd.
     #  In code this would look like this:
 
     for i in range(3):
